@@ -1,6 +1,8 @@
 const express = require('express')
 const vhost = require('vhost')
 global._ = require('lodash') // import lodash globally
+global.Promise = require('bluebird') // import Promise globally
+global.config = require('config')
 
 // main-app
 const app = express()
